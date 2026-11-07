@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serviços criativos, digitais e administrativos de Andreara Bianca Petzinger: design, convites, TCCs, apresentações, vídeos, tecnologia e apoio empresarial.">
+  <meta name="theme-color" content="#F8FAFC">
+  <title>Andreara Bianca Petzinger | Criatividade, Tecnologia e Gestão</title>
+
+  <!-- Tailwind CDN: ideal para protótipo. Para produção, prefira compilar o Tailwind. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#B0E0E6",
+            mint: "#A7DBD8",
+            pink: "#FADADD",
+            ink: "#25364A",
+            paper: "#F8FAFC"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            heading: ["Poppins", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { font-family: Inter, sans-serif; }
+    h1, h2, h3 { font-family: Poppins, sans-serif; }
+    .gradient { background: linear-gradient(135deg, #F8FAFC 0%, #E5F5F4 55%, #FADADD 100%); }
+    .project-card { transition: transform .25s ease, box-shadow .25s ease; }
+    .project-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(37,54,74,.09); }
+    :focus-visible { outline: 3px solid #247A80; outline-offset: 3px; }
+  </style>
+</head>
+
+<body class="bg-paper text-ink antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Navegação principal">
+      <a href="#inicio" class="font-heading text-lg font-bold">Andreara Bianca<span class="text-teal-700">.</span></a>
+      <div class="hidden items-center gap-6 text-sm md:flex">
+        <a href="#servicos" class="hover:text-teal-700">Serviços</a>
+        <a href="#sobre" class="hover:text-teal-700">Sobre mim</a>
+        <a href="#experiencia" class="hover:text-teal-700">Experiência</a>
+        <a href="#formacao" class="hover:text-teal-700">Formação</a>
+        <a href="#contato" class="rounded-full bg-ink px-5 py-3 text-white hover:bg-slate-700">Solicitar orçamento</a>
+      </div>
+      <a href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Gostaria%20de%20conhecer%20seus%20servi%C3%A7os." class="rounded-full bg-mint px-4 py-2 text-sm font-semibold md:hidden">WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="gradient">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-2 md:py-24">
+        <div>
+          <p class="mb-5 text-sm font-semibold uppercase tracking-widest text-teal-800">Criatividade · Soluções digitais · Gestão</p>
+          <h1 class="text-4xl font-bold leading-tight md:text-6xl">
+            Sua ideia, minha criatividade, <span class="text-teal-800">seus resultados!</span> 💙
+          </h1>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+            Transformo suas ideias em soluções digitais criativas, profissionais e personalizadas. Também ajudo pessoas e empresas com tecnologia, organização administrativa, financeiro e apoio operacional.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="rounded-full bg-ink px-7 py-4 font-semibold text-white transition hover:bg-slate-700">Solicitar orçamento pelo WhatsApp →</a>
+            <a href="#servicos" class="rounded-full border border-ink/20 bg-white/70 px-7 py-4 font-semibold hover:bg-white">Conhecer serviços</a>
+          </div>
+          <p class="mt-5 text-sm text-slate-600">Atendimento em Criciúma/SC e remoto, conforme o serviço.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -inset-4 rounded-[2rem] bg-white/50"></div>
+          <div class="relative flex min-h-80 flex-col justify-between overflow-hidden rounded-[2rem] bg-white p-7 shadow-xl md:min-h-96">
+            <div>
+              <p class="text-sm font-medium text-slate-500">Soluções para suas ideias e para o seu negócio</p>
+              <h2 class="mt-2 text-2xl font-bold">Criatividade que encontra soluções.</h2>
+            </div>
+            <div class="mt-6 grid grid-cols-2 gap-3">
+              <div class="rounded-2xl bg-[#E5F5F4] p-4"><span class="text-2xl">🎨</span><p class="mt-2 font-semibold">Design e criação</p></div>
+              <div class="rounded-2xl bg-[#FCECF0] p-4"><span class="text-2xl">📚</span><p class="mt-2 font-semibold">TCCs e documentos</p></div>
+              <div class="rounded-2xl bg-[#EAF0F7] p-4"><span class="text-2xl">💻</span><p class="mt-2 font-semibold">Tecnologia</p></div>
+              <div class="rounded-2xl bg-[#E5F5F4] p-4"><span class="text-2xl">📊</span><p class="mt-2 font-semibold">Apoio empresarial</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="py-20 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-800">Como posso ajudar</p>
+          <h2 class="mt-3 text-3xl font-bold md:text-4xl">Serviços personalizados para suas necessidades.</h2>
+          <p class="mt-5 leading-7 text-slate-600">Do material criativo à organização da rotina empresarial, cada projeto recebe dedicação, criatividade e atenção aos detalhes.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2">
+          <article class="project-card rounded-3xl border border-slate-200 bg-white p-7">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E5F5F4] text-2xl">🎨</div>
+            <h3 class="mt-5 text-xl font-bold">Design e criação digital</h3>
+            <p class="mt-3 leading-7 text-slate-600">Materiais visuais personalizados para pessoas, profissionais, eventos e empresas.</p>
+            <ul class="mt-4 list-inside list-disc space-y-2 text-sm leading-6 text-slate-600">
+              <li>Flyers, artes e identidade visual</li>
+              <li>Convites digitais para aniversários e eventos</li>
+              <li>Posts, carrosséis e stories para redes sociais</li>
+              <li>Criação e edição de vídeos</li>
+              <li>Apresentações comerciais, institucionais e acadêmicas</li>
+            </ul>
+            <a class="mt-6 inline-flex font-semibold text-teal-800 hover:underline" href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Tenho%20interesse%20em%20design%2C%20artes%20ou%20convites.">Solicitar orçamento de criação →</a>
+          </article>
+
+          <article class="project-card rounded-3xl border border-slate-200 bg-white p-7">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FCECF0] text-2xl">📚</div>
+            <h3 class="mt-5 text-xl font-bold">TCCs e documentos</h3>
+            <p class="mt-3 leading-7 text-slate-600">Apoio na revisão, organização e apresentação de documentos acadêmicos e profissionais.</p>
+            <ul class="mt-4 list-inside list-disc space-y-2 text-sm leading-6 text-slate-600">
+              <li>Correção ortográfica e gramatical de TCCs</li>
+              <li>Revisão e formatação de documentos</li>
+              <li>Adequação às normas solicitadas, incluindo ABNT</li>
+              <li>Organização visual de trabalhos e apresentações</li>
+              <li>Formatação de documentos profissionais</li>
+            </ul>
+            <p class="mt-4 text-xs leading-5 text-slate-500">O serviço é de revisão e formatação; o conteúdo acadêmico e a autoria permanecem com o estudante.</p>
+            <a class="mt-4 inline-flex font-semibold text-teal-800 hover:underline" href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20revis%C3%A3o%20ou%20formata%C3%A7%C3%A3o%20de%20documento.">Conversar sobre meu documento →</a>
+          </article>
+
+          <article class="project-card rounded-3xl border border-slate-200 bg-white p-7">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#EAF0F7] text-2xl">💻</div>
+            <h3 class="mt-5 text-xl font-bold">Tecnologia e soluções digitais</h3>
+            <p class="mt-3 leading-7 text-slate-600">Suporte e orientação para utilizar ferramentas digitais e tornar tarefas mais práticas.</p>
+            <ul class="mt-4 list-inside list-disc space-y-2 text-sm leading-6 text-slate-600">
+              <li>Suporte técnico de hardware e software</li>
+              <li>Orientação em sistemas e ferramentas digitais</li>
+              <li>Planilhas, organização de dados e controles</li>
+              <li>Sites, WordPress e apoio a sistemas</li>
+              <li>Desenvolvimento de sistemas e automações conforme o escopo</li>
+              <li>Gestão de redes sociais e CRM</li>
+            </ul>
+            <a class="mt-6 inline-flex font-semibold text-teal-800 hover:underline" href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Preciso%20de%20apoio%20com%20tecnologia%20ou%20uma%20solu%C3%A7%C3%A3o%20digital.">Encontrar uma solução digital →</a>
+          </article>
+
+          <article class="project-card rounded-3xl border border-slate-200 bg-white p-7">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E5F5F4] text-2xl">📊</div>
+            <h3 class="mt-5 text-xl font-bold">Administrativo, financeiro e RH</h3>
+            <p class="mt-3 leading-7 text-slate-600">Apoio operacional para organizar informações, documentos e rotinas de empresas.</p>
+            <ul class="mt-4 list-inside list-disc space-y-2 text-sm leading-6 text-slate-600">
+              <li>Organização administrativa e documental</li>
+              <li>Planilhas e controles financeiros</li>
+              <li>Apoio operacional a contas a pagar e receber</li>
+              <li>Organização de contratos e cadastros</li>
+              <li>Apoio em rotinas de Recursos Humanos</li>
+              <li>Organização de processos e informações internas</li>
+            </ul>
+            <p class="mt-4 text-xs leading-5 text-slate-500">Os serviços são definidos conforme a demanda e respeitam as atividades que exigem habilitação profissional específica.</p>
+            <a class="mt-4 inline-flex font-semibold text-teal-800 hover:underline" href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Busco%20apoio%20administrativo%2C%20financeiro%20ou%20de%20RH.">Organizar a rotina da empresa →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="bg-white py-20 md:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-800">Sobre mim</p>
+          <h2 class="mt-3 text-3xl font-bold md:text-4xl">Criatividade, tecnologia e organização para transformar ideias.</h2>
+          <div class="mt-7 rounded-3xl bg-[#E5F5F4] p-6">
+            <p class="font-heading text-xl font-semibold">“Sua ideia, minha criatividade, seus resultados!” 💙</p>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Cada projeto recebe dedicação, criatividade e atenção aos detalhes.</p>
+          </div>
+        </div>
+        <div class="space-y-5 leading-8 text-slate-600">
+          <p>Sou Andreara Bianca Petzinger, profissional de Comunicação Digital com trajetória nas áreas de tecnologia da informação, desenvolvimento de sistemas, marketing, administração e atendimento ao cliente.</p>
+          <p>Minha experiência inclui suporte técnico, infraestrutura de TI, sistemas e automações, criação de conteúdo digital, organização financeira, contratos e rotinas administrativas e operacionais.</p>
+          <p>Sou formada em Comunicação Digital pela UNESC, com formação técnica em Informática pela Fundação Liberato e capacitação em Administração pelo SENAI. Também realizei cursos de marketing digital, storytelling, gestão de projetos, liderança e experiência do cliente.</p>
+          <p>Hoje, reúno essa experiência para oferecer serviços criativos, digitais e administrativos, buscando compreender cada necessidade e desenvolver soluções personalizadas, com responsabilidade e atenção aos detalhes.</p>
+          <a href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Gostaria%20de%20conversar%20sobre%20um%20servi%C3%A7o." class="inline-flex font-semibold text-teal-800 hover:underline">Vamos conversar sobre seu projeto →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="py-20 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <p class="text-sm font-semibold uppercase tracking-widest text-teal-800">Trajetória profissional</p>
+        <h2 class="mt-3 text-3xl font-bold md:text-4xl">Experiência que conecta diferentes áreas.</h2>
+        <p class="mt-4 max-w-2xl leading-7 text-slate-600">Uma trajetória que combina tecnologia, comunicação, atendimento e gestão operacional.</p>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-sm font-semibold text-teal-800">Tecnologia e sistemas</p>
+            <h3 class="mt-2 text-lg font-bold">CustOffice · MQB Chemical · Defferrari Sistemas · Tecnomobil</h3>
+            <p class="mt-3 leading-7 text-slate-600">Experiência com desenvolvimento e gestão de sistemas, infraestrutura de TI, suporte técnico, equipamentos, atendimento a usuários e melhoria de processos tecnológicos.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-sm font-semibold text-teal-800">Marketing e comunicação</p>
+            <h3 class="mt-2 text-lg font-bold">ABENP (Colégio São Bento) · Instrutora de mídias sociais</h3>
+            <p class="mt-3 leading-7 text-slate-600">Criação de conteúdo, apoio a campanhas institucionais, gestão de mídias digitais e orientação prática sobre plataformas e estratégias digitais.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-sm font-semibold text-teal-800">Administração e operações</p>
+            <h3 class="mt-2 text-lg font-bold">RM Locação de Veículos · Viaport Agenciamentos</h3>
+            <p class="mt-3 leading-7 text-slate-600">Atendimento, contratos, organização documental, apoio financeiro, CRM, logística, cadastros e rotinas administrativas e operacionais.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-sm font-semibold text-teal-800">Imobiliário e documentação</p>
+            <h3 class="mt-2 text-lg font-bold">Vision Imóveis</h3>
+            <p class="mt-3 leading-7 text-slate-600">Experiência com documentação, processos administrativos, atendimento, negociação e suporte a transações imobiliárias.</p>
+          </article>
+        </div>
+        <p class="mt-5 text-sm text-slate-500">Os projetos e períodos podem ser detalhados no currículo completo. Esta seção resume competências relevantes para clientes, sem substituir o histórico profissional integral.</p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="bg-white py-20 md:py-24">
+      <div class="mx-auto max-w-6xl px-5">
+        <p class="text-sm font-semibold uppercase tracking-widest text-teal-800">Competências</p>
+        <h2 class="mt-3 text-3xl font-bold md:text-4xl">Um conjunto de habilidades para diferentes desafios.</h2>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="rounded-full bg-[#E5F5F4] px-4 py-2 text-sm">Desenvolvimento de sistemas</span>
+          <span class="rounded-full bg-[#E5F5F4] px-4 py-2 text-sm">Automações</span>
+          <span class="rounded-full bg-[#FCECF0] px-4 py-2 text-sm">Canva e Photoshop</span>
+          <span class="rounded-full bg-[#EAF0F7] px-4 py-2 text-sm">Pacote Office e Excel</span>
+          <span class="rounded-full bg-[#E5F5F4] px-4 py-2 text-sm">WordPress e sistemas</span>
+          <span class="rounded-full bg-[#FCECF0] px-4 py-2 text-sm">Marketing digital</span>
+          <span class="rounded-full bg-[#EAF0F7] px-4 py-2 text-sm">Suporte técnico</span>
+          <span class="rounded-full bg-[#E5F5F4] px-4 py-2 text-sm">CRM e redes sociais</span>
+          <span class="rounded-full bg-[#FCECF0] px-4 py-2 text-sm">Gestão administrativa</span>
+          <span class="rounded-full bg-[#EAF0F7] px-4 py-2 text-sm">Organização financeira</span>
+          <span class="rounded-full bg-[#E5F5F4] px-4 py-2 text-sm">Contratos e documentação</span>
+          <span class="rounded-full bg-[#FCECF0] px-4 py-2 text-sm">Treinamento de usuários</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="py-20 md:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-800">Formação</p>
+          <h2 class="mt-3 text-3xl font-bold">Conhecimento em constante desenvolvimento.</h2>
+          <div class="mt-7 space-y-4">
+            <div class="rounded-xl bg-white p-5">
+              <h3 class="font-bold">Comunicação Digital</h3>
+              <p class="mt-1 text-sm text-slate-600">UNESC/SC · Concluído</p>
+            </div>
+            <div class="rounded-xl bg-white p-5">
+              <h3 class="font-bold">Gestão da TI</h3>
+              <p class="mt-1 text-sm text-slate-600">UNISINOS/RS</p>
+            </div>
+            <div class="rounded-xl bg-white p-5">
+              <h3 class="font-bold">Técnico em Informática</h3>
+              <p class="mt-1 text-sm text-slate-600">Fundação Liberato/RS</p>
+            </div>
+            <div class="rounded-xl bg-white p-5">
+              <h3 class="font-bold">Técnico em Transações Imobiliárias</h3>
+              <p class="mt-1 text-sm text-slate-600">Instituto do Corretor/SC</p>
+            </div>
+            <div class="rounded-xl bg-white p-5">
+              <h3 class="font-bold">Auxiliar Administrativo · 240 horas</h3>
+              <p class="mt-1 text-sm text-slate-600">SENAI/RS</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-widest text-teal-800">Cursos e certificações</p>
+          <h2 class="mt-3 text-3xl font-bold">Aprendizado aplicado à prática.</h2>
+          <ul class="mt-7 space-y-3">
+            <li class="rounded-xl border border-slate-200 bg-white p-4">Dados para o Bem — FGV</li>
+            <li class="rounded-xl border border-slate-200 bg-white p-4">Imagem e Direitos na Web — FGV</li>
+            <li class="rounded-xl border border-slate-200 bg-white p-4">Storytelling e Técnicas de Apresentação — FGV</li>
+            <li class="rounded-xl border border-slate-200 bg-white p-4">Liderança na Gestão de Equipes — UNIASSELVI</li>
+            <li class="rounded-xl border border-slate-200 bg-white p-4">Planejamento de Marketing Digital — UNIASSELVI</li>
+            <li class="rounded-xl border border-slate-200 bg-white p-4">Inovando na Gestão de Projetos — ENAP</li>
+            <li class="rounded-xl border border-slate-200 bg-white p-4">Transformando Serviços em Experiências — UNESC</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="contato" class="px-5 py-20 md:py-24">
+      <div class="mx-auto max-w-5xl overflow-hidden rounded-[2rem] bg-ink px-6 py-14 text-center text-white md:px-16 md:py-20">
+        <p class="text-sm font-semibold uppercase tracking-widest text-mint">Vamos tirar sua ideia do papel?</p>
+        <h2 class="mx-auto mt-5 max-w-3xl text-3xl font-bold md:text-5xl">Sua ideia, minha criatividade, seus resultados! 💙</h2>
+        <p class="mx-auto mt-5 max-w-xl leading-7 text-slate-300">Precisa de uma arte, convite, apresentação, ajuda com seu TCC, suporte digital ou apoio para organizar sua empresa? Conte o que você precisa.</p>
+        <a href="https://wa.me/5551997153475?text=Ol%C3%A1%2C%20Andreara!%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="mt-8 inline-flex items-center justify-center rounded-full bg-mint px-8 py-4 font-semibold text-ink transition hover:bg-white">Falar com Andreara no WhatsApp →</a>
+        <p class="mt-4 text-sm text-slate-300">(51) 99715-3475</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ E CONTATOS -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:grid-cols-3">
+      <div>
+        <p class="font-heading text-lg font-bold">Andreara Bianca Petzinger</p>
+        <p class="mt-2 text-sm leading-6 text-slate-500">Sua ideia, minha criatividade, seus resultados! 💙</p>
+        <p class="mt-2 text-sm text-slate-500">Criciúma, Santa Catarina</p>
+      </div>
+      <div>
+        <h2 class="font-semibold">Contato</h2>
+        <ul class="mt-3 space-y-2 text-sm text-slate-600">
+          <li><a class="hover:text-teal-800" href="https://wa.me/5551997153475">(51) 99715-3475 — WhatsApp</a></li>
+          <li><a class="hover:text-teal-800" href="tel:+5548999331358">(48) 99933-1358</a></li>
+          <li><a class="hover:text-teal-800" href="mailto:criacoesdaandreara@gmail.com">criacoesdaandreara@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold">Redes sociais</h2>
+        <ul class="mt-3 space-y-2 text-sm text-slate-600">
+          <li><a href="https://www.instagram.com/andrearapetzinger/" target="_blank" rel="noopener noreferrer" class="hover:text-teal-800">Instagram: @andrearapetzinger</a></li>
+          <li><a href="https://www.linkedin.com/in/andreara-petzinger/" target="_blank" rel="noopener noreferrer" class="hover:text-teal-800">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-200 px-5 py-5 text-center text-xs text-slate-500">
+      © 2026 Andreara Bianca Petzinger. Todos os direitos reservados.
+    </div>
+  </footer>
+</body>
+</html>
